@@ -1,0 +1,32 @@
+div.container {
+    & > div.text {
+        display: block;
+    }
+
+    & > div.box {
+        border: 2px solid blue;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 100px;
+
+        // & > div.bext
+        & > div.text {
+            width: 60%;
+            height: auto;
+        }
+
+        & > div.box_image {
+            width: 40%;
+            height: auto;
+            position: relative;
+
+            img {
+                object-fit: fill;
+                background-size: 100% 100%;
+            }
+        }
+    }
+}
