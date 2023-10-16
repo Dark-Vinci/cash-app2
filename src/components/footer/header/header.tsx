@@ -2,7 +2,6 @@ import { JSX } from 'react';
 
 import scss from './header.module.scss';
 
-
 export function Header(): JSX.Element {
     return (
         <div className={scss.container}>
@@ -11,8 +10,8 @@ export function Header(): JSX.Element {
             </div>
 
             <div className={scss.box}>
-                <div className="box_text">Download Cash App</div>
-                <div className="box_image">
+                <div className={scss.box_text}>Download Cash App</div>
+                <div className={scss.box_image}>
                     <img src="../../../asset/images/a2022.png" alt="cash app imag" />
                 </div>
             </div>
