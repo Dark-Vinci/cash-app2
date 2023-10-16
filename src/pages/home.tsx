@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
-import {JSX} from 'react';
+import { JSX } from 'react';
 
-import { Footer, Header } from '@components';
+import { Footer, Header } from '../components';
 
 export function Home(): JSX.Element {
     return (

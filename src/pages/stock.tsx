@@ -8,4 +8,3 @@ export function Stock(): JSX.Element {
         </div>
     );
 }
-
