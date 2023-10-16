@@ -1,6 +1,8 @@
 import { NavLink } from "react-router-dom";
 import {JSX} from 'react';
 
+import { Footer } from '@components';
+
 export function Home(): JSX.Element {
     return (
         <div>
@@ -23,6 +25,7 @@ export function Home(): JSX.Element {
             </nav>
 
             <h1>This is the home page</h1>
+            <Footer />
         </div>
     );
 }

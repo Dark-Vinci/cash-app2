@@ -2,7 +2,7 @@ import { JSX } from 'react';
 
 import scss from './header.module.scss';
 
-export function Header(): JSX.Element {
+export function FooterHeader(): JSX.Element {
     return (
         <div className={scss.container}>
             <div className={scss.text}>

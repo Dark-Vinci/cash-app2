@@ -20,7 +20,8 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "paths": {
-      "@types": ["./src/types"]
+      "@types": ["./src/types"],
+      "@components": ["./src/components"]
     }
   },
   "include": [

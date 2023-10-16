@@ -3,6 +3,14 @@ import { JSX } from 'react';
 import scss from './nav.module.scss';
 import { NavCards, NavSubCards, LearnMore, StayInTouch } from '.';
 
+const state = [
+    'Linsence',
+    'Careers',
+    'Press',
+    'Support',
+    'Legal',
+];
+
 export function Navigator(): JSX.Element {
     return (
         <div className={scss.container}>
@@ -20,12 +28,16 @@ export function Navigator(): JSX.Element {
 
             {/* learn more */}
             <div className="learn_more">
-                <LearnMore />
+                <LearnMore 
+                    state={state}
+                />
             </div>
 
             {/* stay in touch */}
             <div className="stay_in_touch">
-                <StayInTouch />
+                <StayInTouch 
+                    isFooter={false}
+                />
             </div>
         </div>
     );

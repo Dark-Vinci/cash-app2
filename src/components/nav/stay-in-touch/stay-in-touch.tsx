@@ -5,18 +5,21 @@ import { FaTwitch, FaInstagram } from 'react-icons/fa';
 import { BiLogoTiktok } from 'react-icons/bi';
 
 import scss from './stay-in-touch.module.scss';
+import {StayInTouchProps} from '@types';
 
-// children?: React.ReactNode;
-// size?: string | number;
-// color?: string;
-// title?: string;
 
-export function StayInTouch(): JSX.Element {
+export function StayInTouch({isFooter}: StayInTouchProps): JSX.Element {
+    let iconClassName = scss.icon_nav_container;
+
+    if (isFooter) {
+        iconClassName = scss.icon_footer_container;
+    }
+
     return (
         <div className={scss.stay_in_touch}>
             <h3>Stay in Touch</h3>
 
-            <div className={scss.icon_container}>
+            <div className={iconClassName}>
                 <VscTwitter color='white' />
                 <PiLinkedinLogoFill color='white' />
                 <FaTwitch color='white' />

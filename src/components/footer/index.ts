@@ -1,1 +1,3 @@
-export {};
+// export {};
+export * from './footer';
+
