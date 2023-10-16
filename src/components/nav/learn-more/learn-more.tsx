@@ -19,7 +19,7 @@ export function LearnMore(): JSX.Element {
                 {
                     state.map(el => {
                         return (
-                            <div 
+                            <div
                                 key={ uid() } 
                                 className={scss.element}
                                 >
