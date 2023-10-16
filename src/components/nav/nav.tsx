@@ -1,10 +1,11 @@
 import { JSX } from 'react';
 
+import scss from './nav.module.scss';
 import { NavCards, NavSubCards, LearnMore, StayInTouch } from '.';
 
 export function Navigator(): JSX.Element {
     return (
-        <div>
+        <div className={scss.container}>
             <h1>Do more with your money</h1>
 
             {/* main cards */}
@@ -16,7 +17,6 @@ export function Navigator(): JSX.Element {
             <div className="nav_sub_cards">
                 <NavSubCards />
             </div>
-
 
             {/* learn more */}
             <div className="learn_more">

@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
-import { JSX } from 'react'
+import { JSX } from 'react';
 
 import type { NavCardProps } from '@types';
 import scss from './nav-card.module.scss';
