@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import {JSX} from 'react';
 
-import { Footer } from '@components';
+import { Footer, Header } from '@components';
 
 export function Home(): JSX.Element {
     return (
@@ -23,9 +23,17 @@ export function Home(): JSX.Element {
                     <li><NavLink to='/bank'>bank</NavLink></li>
                 </ul>
             </nav>
+            
 
             <h1>This is the home page</h1>
-            <Footer />
+
+            <div className="header">
+                <Header />
+            </div>
+
+            <div className="footer">
+                <Footer />
+            </div>
         </div>
     );
 }
