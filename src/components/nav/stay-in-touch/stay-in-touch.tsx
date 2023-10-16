@@ -7,7 +7,6 @@ import { BiLogoTiktok } from 'react-icons/bi';
 import scss from './stay-in-touch.module.scss';
 import {StayInTouchProps} from '@types';
 
-
 export function StayInTouch({isFooter}: StayInTouchProps): JSX.Element {
     let iconClassName = scss.icon_nav_container;
 

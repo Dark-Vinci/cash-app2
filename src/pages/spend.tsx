@@ -1,4 +1,3 @@
-// export {};
 import {JSX} from 'react';
 
 export function Spend(): JSX.Element {

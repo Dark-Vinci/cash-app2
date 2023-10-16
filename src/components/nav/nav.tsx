@@ -4,7 +4,7 @@ import scss from './nav.module.scss';
 import { NavCards, NavSubCards, LearnMore, StayInTouch } from '.';
 
 const state = [
-    'Linsence',
+    'License',
     'Careers',
     'Press',
     'Support',
@@ -17,24 +17,24 @@ export function Navigator(): JSX.Element {
             <h1>Do more with your money</h1>
 
             {/* main cards */}
-            <div className="nav_cards">
+            <div className={scss.nav_cards}>
                 <NavCards />
             </div>
 
             {/* sub cards */}
-            <div className="nav_sub_cards">
+            <div className={scss.nav_sub_cards}>
                 <NavSubCards />
             </div>
 
             {/* learn more */}
-            <div className="learn_more">
+            <div className={scss.learn_more}>
                 <LearnMore 
                     state={state}
                 />
             </div>
 
             {/* stay in touch */}
-            <div className="stay_in_touch">
+            <div className={scss.stay_in_touch}>
                 <StayInTouch 
                     isFooter={false}
                 />
@@ -42,3 +42,6 @@ export function Navigator(): JSX.Element {
         </div>
     );
 }
+
+// 255 + 40 = 295 =>
+//

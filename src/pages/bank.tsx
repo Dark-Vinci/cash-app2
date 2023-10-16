@@ -1,6 +1,4 @@
-// export {};
 import {JSX} from 'react';
-
 
 export function Bank(): JSX.Element {
     return (

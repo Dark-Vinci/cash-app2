@@ -23,7 +23,7 @@ export function NavSubCards(): JSX.Element {
         <div className={scss.nav_sub_cards}>
             {
                 state.map(
-                    ({imgSRC, title, description}) => {
+                    ({ imgSRC, title, description}) => {
                     return (
                         <div
                             key={ uid() }

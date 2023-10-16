@@ -1,11 +1,14 @@
 import { NavLink } from "react-router-dom";
 import { JSX } from 'react';
 
-import { Footer, Header } from '../components';
+import scss from './home.module.scss';
+
+import { Footer, Header } from '../../components';
+import { FooterHeader as Sticky } from "../../components/footer/header";
 
 export function Home(): JSX.Element {
     return (
-        <div>
+        <div className={scss.container}>
             <nav>
                 <ul>
                     <li>
@@ -23,16 +26,19 @@ export function Home(): JSX.Element {
                     <li><NavLink to='/bank'>bank</NavLink></li>
                 </ul>
             </nav>
-            
 
             <h1>This is the home page</h1>
 
-            <div className="header">
+            <div className={scss.header}>
                 <Header />
             </div>
 
-            <div className="footer">
+            <div className={scss.footer}>
                 <Footer />
+            </div>
+
+            <div className={scss.sticky}>
+                <Sticky />
             </div>
         </div>
     );

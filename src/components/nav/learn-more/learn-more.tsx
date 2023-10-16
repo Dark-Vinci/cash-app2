@@ -4,18 +4,6 @@ import { uid } from 'uid';
 import scss from './learn-more.module.scss';
 import { LearnMoreProps } from '@types';
 
-// const state = [
-//     'Linsence',
-//     'Careers',
-//     'Press',
-//     'Support',
-//     'Legal',
-// ];
-
-// interface LearnMoreProps {
-//     readonly state: Array<string>,
-// }
-
 export function LearnMore({state}: LearnMoreProps): JSX.Element {
     return (
         <div className={scss.learn_more}>

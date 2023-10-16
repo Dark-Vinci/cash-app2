@@ -1,4 +1,3 @@
-// export {};
 import {JSX} from 'react';
 
 export function Send(): JSX.Element {
