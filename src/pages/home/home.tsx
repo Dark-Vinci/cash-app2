@@ -3,8 +3,7 @@ import { JSX } from 'react';
 
 import scss from './home.module.scss';
 
-import { Footer, Header } from '../../components';
-import { FooterHeader as Sticky } from "../../components/footer/header";
+import { Footer, Header, FooterHeader as Sticky } from '@components';
 
 export function Home(): JSX.Element {
     return (
