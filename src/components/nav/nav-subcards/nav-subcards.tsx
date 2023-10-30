@@ -20,7 +20,7 @@ const state: Array<Abc> = [
 
 export function NavSubCards(): JSX.Element {
     return (
-        <div className={scss.nav_sub_cards}>
+        <div className={scss.container}>
             {
                 state.map(
                     ({ imgSRC, title, description}) => {

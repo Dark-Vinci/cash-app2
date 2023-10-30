@@ -4,7 +4,7 @@ import scss from './main.module.scss';
 import { LearnMore, StayInTouch } from '../../nav';
 
 const state = [
-    'Linsence',
+    'Licence',
     'Careers',
     'Press',
     'Support',

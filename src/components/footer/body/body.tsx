@@ -16,7 +16,7 @@ export function FooterBody(): JSX.Element {
             <div className={scss.item2}>
                 Cash App waives ATM fees for all in-network withdrawals every month 
                 you have at least $300 direct deposited into your Cash balance. Additional 
-                information <a href="http://">here</a>.
+                information <a href="https://">here</a>.
             </div>
 
             <div className={scss.item3}>
