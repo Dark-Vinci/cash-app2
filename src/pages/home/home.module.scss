@@ -1,7 +1,93 @@
 div.container {
-  display: block;
+  border: 2px solid grey;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  z-index: -1;
+  max-width: 100vw;
 
-  div.sticky {
-    display: flex;
+  & > div.video_container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    top: 0px;
+    left: 0px;
+  }
+
+  & > div.content_container {
+    z-index: 2;
+    position: relative;
+
+
+    & > div.nav {
+      border: 2px solid green;
+      position: fixed;
+      top: 0px;
+      width: 100%;
+    }
+
+    & > div.content_header {
+      max-width: 100vw;
+      border: 2px solid white;
+      background-color: rgba(175, 23, 89, 0.2);
+      display: grid;
+      place-items: center;
+      min-height: 1000px;
+
+      & > div {
+        border: 2px solid green;
+        width: auto;
+        height: auto;
+
+        .el {
+          font-weight: bold;
+          font-size: 30px;
+        }
+      }
+    }
+
+    & > div.bank {
+      background-color: #61dafb;
+      height: 1200px;
+      max-width: 100vw;
+      word-wrap: break-word;
+    }
+
+    & > div.bitcoin {
+      background-color: #df61fb;
+      height: 1200px;
+      max-width: 100vw;
+      word-wrap: break-word;
+    }
+
+    & > div.stock {
+      background-color: #88fb61;
+      min-height: 1200px;
+      max-width: 100vw;
+      word-wrap: break-word;
+    }
+
+    & > div.explore {
+      background-color: #1aa494;
+      min-height: 1200px;
+      max-width: 100vw;
+      word-wrap: break-word;
+    }
+
+    & > div.footer {
+      position: relative;
+      border: 2px solid #477bff;
+      background-color: rgb(97, 211, 97);
+    }
+  }
+
+  & > div.main_header {
+    height: 200px;
+    border: 2px solid blue;
+
+    & > div {
+      width: 100px;
+    }
   }
 }

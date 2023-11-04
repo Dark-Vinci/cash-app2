@@ -1,4 +1,6 @@
-import {JSX} from 'react';
+import { JSX } from 'react';
+
+import style from './footer.module.scss';
 
 import { FooterHeader } from './header';
 import { FooterMain } from './main';
@@ -6,19 +8,19 @@ import { FooterBody } from './body';
 
 export function Footer(): JSX.Element {
     return (
-        <div className="container">
+        <div className={style.container}>
             {/* left */}
-            <div className="left">
+            <div className={style.left}>
                 <FooterHeader />
             </div>
 
             {/* right hand side */}
-            <div className="right">
-                <div className="main">
+            <div className={style.right}>
+                <div className={style.main}>
                     <FooterMain />
                 </div>
 
-                <div className="body">
+                <div className={style.body}>
                     <FooterBody />
                 </div>
             </div>

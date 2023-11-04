@@ -1,0 +1,25 @@
+div.container {
+  border: 2px solid yellow;
+  border-radius: 10px;
+  min-height: 1000px;
+  width: 100vw;
+  display: flex;
+
+  & > div.left {
+    border: 2px solid purple;
+    flex-basis: 50%;
+  }
+
+  & > div.right {
+    flex-basis: 50%;
+    border: 3px solid tomato;
+
+    & > div.main {
+      border: 2px solid #071fad;
+    }
+
+    & > div.body {
+      border: 2px solid greenyellow;
+    }
+  }
+}
