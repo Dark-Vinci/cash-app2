@@ -2,7 +2,7 @@ import { JSX, useState, useEffect } from 'react';
 
 import style from './home.module.scss';
 
-import {Header, Footer, FooterHeader} from '@components';
+import {Header, Footer, FooterHeader, DownloadLogo} from '@components';
 
 export function Home(): JSX.Element {
     const [height, setHeight] = useState<number>(window.innerHeight);
@@ -39,13 +39,12 @@ export function Home(): JSX.Element {
                 </div>
 
                 <div className={style.content_header}>
-                    <div>
-                        <div className={style.el}>DO MORE</div>
-                        <div className={style.el}>WITH YOUR</div>
-                        <div className={style.el}>
-                            MONEY
-                        </div>
-                        <FooterHeader />
+                    <div className={style.word_content}>
+                        <h1>
+                            <span>Do more</span>
+                            <span>with your</span>
+                            <span>money <DownloadLogo /></span>
+                        </h1>
                     </div>
                 </div>
 

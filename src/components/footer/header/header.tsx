@@ -2,6 +2,8 @@ import { JSX } from 'react';
 
 import scss from './header.module.scss';
 
+import abc from '@images/a2022.png';
+
 export function FooterHeader(): JSX.Element {
     return (
         <div className={scss.container}>
@@ -10,11 +12,28 @@ export function FooterHeader(): JSX.Element {
             </div>
 
             <div className={scss.box}>
-                <div className={scss.box_text}>Download Cash App</div>
-                <div className={scss.box_image}>
-                    <img src="../../../asset/images/a2022.png" alt="cash app imag" />
-                </div>
+                <DownloadLogoBox />
             </div>
+        </div>
+    );
+}
+
+export function DownloadLogoBox(): JSX.Element {
+    return (
+        <div className={scss.box}>
+            <div className={scss.box_text}>Download Cash App</div>
+            <DownloadLogo />
+        </div>
+    );
+}
+
+export function DownloadLogo (): JSX.Element {
+    return (
+        <div className={scss.box_image}>
+            <img
+                src={abc}
+                alt="cash app imag"
+            />
         </div>
     );
 }

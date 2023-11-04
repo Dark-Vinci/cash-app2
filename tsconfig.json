@@ -27,7 +27,8 @@
       "@router": ["./router"],
       "@footer": ["./components/footer"],
       "@header": ["./components/header"],
-      "@nav": ["./components/nav"]
+      "@nav": ["./components/nav"],
+      "@images": ["./asset/images"]
     }
   },
   "include": [
