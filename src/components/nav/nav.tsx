@@ -42,6 +42,3 @@ export function Navigator(): JSX.Element {
         </div>
     );
 }
-
-// 255 + 40 = 295 =>
-//

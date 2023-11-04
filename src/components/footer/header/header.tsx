@@ -22,18 +22,12 @@ export function DownloadLogoBox(): JSX.Element {
     return (
         <div className={scss.box}>
             <div className={scss.box_text}>Download Cash App</div>
-            <DownloadLogo />
-        </div>
-    );
-}
-
-export function DownloadLogo (): JSX.Element {
-    return (
-        <div className={scss.box_image}>
-            <img
-                src={abc}
-                alt="cash app imag"
-            />
+            <div className={scss.box_image}>
+                <img
+                    src={abc}
+                    alt="cash-app-image"
+                />
+            </div>
         </div>
     );
 }
