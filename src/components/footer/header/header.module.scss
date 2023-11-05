@@ -4,7 +4,7 @@ div.container {
     }
 
     & > div.box {
-        border: 2px solid blue;
+        //border: 2px solid blue;
         border-radius: 10px;
         display: flex;
         justify-content: center;
@@ -29,34 +29,57 @@ div.container {
         }
     }
 }
-
+//send_desktop_layer_02.webp
+//assets_nav_send.webp, send_desktop_layer_01.webp
 div.box {
-    border: 2px solid #09343f;
+    border: 1px solid white;
     display: flex;
-    height: 70px;
-    width: 200px;
-    border-radius: 10px;
-    font-size: 10px;
+    height: 100px;
+    width: 300px;
+    border-radius: 15px;
+    //font-size: 10px;
 
     & > div.box_text {
-        flex-basis: 70%;
-        border: 2px solid navajowhite;
-        display: grid;
-        place-items: center;
+        flex-basis: 55%;
+        //border: 2px solid navajowhite;
+        //display: grid;
+        //place-items: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+
+        & > span {
+            font-size: 15px;
+            font-weight: bold;
+            width: 100px;
+            height: 30px;
+            //border: 2px solid yellow;
+        }
+
+        & > span:nth-child(1) {
+            display: flex;
+            //fo
+            align-items: flex-end;
+        }
     }
 
     & > div.box_image {
-        flex-basis: 30%;
-        position: relative;
-        //font-size: 10px;
+        flex-basis: 40%;
+        display: grid;
+        place-items: center;
         font-weight: normal;
         overflow: hidden;
+        margin: 5px;
+        //border: 2px solid bisque;
 
         img {
             width: 100%;
             height: 100%;
+            border-radius: 12px;
             box-sizing: border-box;
-            border: 2px solid blue;
+            //border: 2px solid blue;
         }
     }
 }

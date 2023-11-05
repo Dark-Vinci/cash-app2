@@ -17,8 +17,8 @@ export function Header(): JSX.Element {
         <div className={style.container}>
             <div className={style.left}>
                 <SiCashapp
-                    color='blue'
-                    enableBackground={'transparent'}
+                    color='white'
+                    // enableBackground={'transparent'}
                     size={40}
                 />
                 <h4><a href="./cashapp">Cash App</a></h4>

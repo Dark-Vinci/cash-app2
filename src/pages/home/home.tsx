@@ -17,6 +17,7 @@ export function Home(): JSX.Element {
 
     return (
         <div className={style.container}>
+            {/* LEARN MORE|> PAUSE |> NAV */}
             {/*the video background of the webpage*/}
             <div className={style.video_container}>
                 <video
@@ -41,37 +42,26 @@ export function Home(): JSX.Element {
                 <div className={style.content_header}>
                     <div className={style.word_content}>
                         <h1>
-                            <span className={style.el}>Do more</span>
-                            <span className={style.el}>with your</span>
-                            <span className={style.elem}>money <DownloadLogoBox /></span>
+                            <span className={style.el}>DO MORE</span>
+                            <span className={style.el}>WITH YOUR</span>
+                            <span className={style.elem}>
+                                <span>MONEY</span>
+                                <span><DownloadLogoBox /></span>
+                            </span>
                         </h1>
 
                         <div>
-                            second content
+                            <div>
+                                Send and spend, bank*, and buy stocks or bitcoin**
+                            </div>
+
+                            <div className={style.longer}>
+                               <div>
+                                   Cash App is a financial services platform, not a bank. Banking services are provided by Cash App’s bank partner(s). Prepaid debit cards issued by Sutton Bank. Brokerage services by Cash App Investing LLC, member FINRA/SIPC, subsidiary of Block, Inc. Bitcoin services provided by Block, Inc, formerly known as Square, Inc.
+                               </div>
+                            </div>
                         </div>
-
-                        <div>third content</div>
                     </div>
-                </div>
-
-                <div className={style.bank}>
-                    {Array(1000).fill('ABC').toString()}
-                </div>
-
-                <div className={style.bitcoin}>
-                    {Array(1000).fill('999').toString()}
-                </div>
-
-                <div className={style.stock}>
-                    {Array(1000).fill('XXX').toString()}
-                </div>
-
-                <div className={style.explore}>
-                    {Array(1000).fill('ZZZ').toString()}
-                </div>
-
-                <div className={style.footer}>
-                    <Footer />
                 </div>
             </div>
         </div>

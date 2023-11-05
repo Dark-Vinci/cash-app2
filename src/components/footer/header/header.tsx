@@ -21,7 +21,10 @@ export function FooterHeader(): JSX.Element {
 export function DownloadLogoBox(): JSX.Element {
     return (
         <div className={scss.box}>
-            <div className={scss.box_text}>Download Cash App</div>
+            <div className={scss.box_text}>
+                <span>Download</span>
+                <span>Cash App</span>
+            </div>
             <div className={scss.box_image}>
                 <img
                     src={abc}
