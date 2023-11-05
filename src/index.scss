@@ -8,8 +8,7 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
 *,
@@ -18,6 +17,6 @@ code {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  overflow: auto;
+  overflow: hidden;
   max-width: 100vw;
 }
